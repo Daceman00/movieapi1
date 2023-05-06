@@ -1,0 +1,18 @@
+<div *ngIf="movie">
+    <h2>{{ movie.name }}</h2>
+    <div>
+        Name:
+        <input [(ngModel)]="movie.name" placeholder="Name"/>
+    </div>
+    <div>
+        Genre:
+        <input [(ngModel)]="movie.genre" placeholder="Genre"/>
+    </div>
+    <div>
+        Studio:
+        <input [(ngModel)]="movie.studio" placeholder="Studio"/>
+    </div>
+    <button (click)="updateMovie(movie)" *ngIf="movie.id">Save</button>
+    <button (click)="deleteMovie(movie)" *ngIf="movie.id">Delete</button>
+    <button (click)="createMovie(movie)" *ngIf="!movie.id">Create</button>
+</div>>
