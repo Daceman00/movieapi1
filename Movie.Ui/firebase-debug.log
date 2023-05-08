@@ -1,0 +1,26 @@
+[debug] [2023-05-08T11:54:19.914Z] ----------------------------------------------------------------------
+[debug] [2023-05-08T11:54:19.919Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\HP250\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js use --add
+[debug] [2023-05-08T11:54:19.920Z] CLI Version:   11.30.0
+[debug] [2023-05-08T11:54:19.920Z] Platform:      win32
+[debug] [2023-05-08T11:54:19.920Z] Node Version:  v18.16.0
+[debug] [2023-05-08T11:54:19.922Z] Time:          Mon May 08 2023 13:54:19 GMT+0200 (srednjoeuropsko ljetno vrijeme)
+[debug] [2023-05-08T11:54:19.922Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-05-08T11:54:20.033Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-05-08T11:54:20.034Z] > authorizing via signed-in user (dariomandic2000@gmail.com)
+[debug] [2023-05-08T11:54:20.039Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=1000
+[debug] [2023-05-08T11:54:20.772Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2023-05-08T11:54:20.773Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[debug] [2023-05-08T11:54:32.302Z] TypeError: Cannot read properties of undefined (reading 'value')
+    at ListPrompt.getCurrentValue (C:\Users\HP250\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\inquirer\lib\prompts\list.js:145:53)
+    at C:\Users\HP250\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\rxjs\dist\cjs\internal\operators\map.js:10:37
+    at OperatorSubscriber._this._next (C:\Users\HP250\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\rxjs\dist\cjs\internal\operators\OperatorSubscriber.js:33:21)
+    at Subscriber.next (C:\Users\HP250\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\rxjs\dist\cjs\internal\Subscriber.js:51:18)
+    at C:\Users\HP250\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\rxjs\dist\cjs\internal\operators\take.js:15:32
+    at OperatorSubscriber._this._next (C:\Users\HP250\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\rxjs\dist\cjs\internal\operators\OperatorSubscriber.js:33:21)
+    at Subscriber.next (C:\Users\HP250\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\rxjs\dist\cjs\internal\Subscriber.js:51:18)
+    at Interface.handler (C:\Users\HP250\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\rxjs\dist\cjs\internal\observable\fromEvent.js:59:31)
+    at Interface.emit (node:events:525:35)
+    at Interface.emit (node:domain:489:12)
+[error] 
+[error] Error: An unexpected error has occurred.
